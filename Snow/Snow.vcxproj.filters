@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EventBus">
+      <UniqueIdentifier>{8e6caeb5-21d6-4299-bacd-a5aff74aeba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{97344483-4001-46f3-a9f5-4d062e4dcbd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{878ac4dd-6187-4f24-ab27-53893e85bcc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Datablock">
+      <UniqueIdentifier>{64554669-2dea-463e-af78-7579efcdf290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Datablock\datas">
+      <UniqueIdentifier>{35c4b959-4005-4ec1-9c1e-c58154857c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{a2124e4e-d4d1-4073-b0a5-75711f1c4279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{9fe21652-3cd6-462f-88ba-4ddfd10d8663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Interface">
+      <UniqueIdentifier>{d18b2be4-9b77-4363-94b4-373b1f8694a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventBus\Event">
+      <UniqueIdentifier>{7564ded0-e522-4f78-94e8-2cc178088287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{bdc2c1d2-6de8-4741-889c-9bd33e695fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\GameObject">
+      <UniqueIdentifier>{2b16d090-83fc-4866-878f-d5597d958a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Component">
+      <UniqueIdentifier>{e0bf8d17-1ca7-4187-bf6a-a889e4538605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{41066027-0937-4703-97c8-14ed705d7d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{4ecaa97d-e6c4-4b68-b07c-d70e9a414604}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\interface\IInterface.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TypeDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Define.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Enum.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Macros.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IEventBus.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IComponent.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IEvent.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IGameObject.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EventBus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ConsoleColor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\log4z.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Logger.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Random.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\tinystr.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\tinyxml.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Tokenizer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\XmlParser.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IModule.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IModuleHost.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ModuleFactory.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Singleton.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ModuleDatablock.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Datablock\DataBlockHelper.h">
+      <Filter>Datablock</Filter>
+    </ClInclude>
+    <ClInclude Include="Datablock\DataBlockInclude.h">
+      <Filter>Datablock</Filter>
+    </ClInclude>
+    <ClInclude Include="Datablock\datas\ItemTable.h">
+      <Filter>Datablock\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DataBlockDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Server.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ModuleSceneManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="EventBus\Event\EventInclude.h">
+      <Filter>EventBus\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventBus\Event\EventTest.h">
+      <Filter>EventBus\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EventDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Component\ComEventBus.h">
+      <Filter>Include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameObject\User.h">
+      <Filter>Include\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Component\ComTest.h">
+      <Filter>Include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\ISocket.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Socket.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IOutPacket.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IPacket.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interface\IInPacket.h">
+      <Filter>Include\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ModuleEventBus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EventBus\EventBus.cpp">
+      <Filter>EventBus</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ConsoleColor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\log4z.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Logger.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Random.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\tinystr.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\tinyxml.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\tinyxmlerror.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\tinyxmlparser.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Tokenizer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\XmlParser.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\ModuleFactory.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\ModuleDatablock.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Datablock\DataBlockDefine.cpp">
+      <Filter>Datablock</Filter>
+    </ClCompile>
+    <ClCompile Include="Datablock\DataBlockHelper.cpp">
+      <Filter>Datablock</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Server.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\ModuleSceneManager.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBus\Event\EventDefine.cpp">
+      <Filter>EventBus\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\User.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Compnent\ComEventBus.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Compnent\ComTest.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Socket.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\ModuleEventBus.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52EE9800-328E-4780-A56E-2C2E6B26615B}</ProjectGuid>
+    <RootNamespace>Snow</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.lib</TargetExt>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>EventBus\Event;Server;Datablock;Datablock\datas;Include;Utils;Libevent/include;pthreads-w32-2-9-1-release\Pre-built.2\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Datablock\DataBlockHelper.h" />
+    <ClInclude Include="Datablock\DataBlockInclude.h" />
+    <ClInclude Include="Datablock\datas\ItemTable.h" />
+    <ClInclude Include="EventBus\Event\EventInclude.h" />
+    <ClInclude Include="EventBus\Event\EventTest.h" />
+    <ClInclude Include="Include\Component\ComEventBus.h" />
+    <ClInclude Include="Include\Component\ComTest.h" />
+    <ClInclude Include="Include\DataBlockDefine.h" />
+    <ClInclude Include="include\Define.h" />
+    <ClInclude Include="include\Enum.h" />
+    <ClInclude Include="Include\EventBus.h" />
+    <ClInclude Include="Include\EventDefine.h" />
+    <ClInclude Include="Include\GameObject\User.h" />
+    <ClInclude Include="Include\Interface\IComponent.h" />
+    <ClInclude Include="Include\Interface\IEvent.h" />
+    <ClInclude Include="Include\Interface\IEventBus.h" />
+    <ClInclude Include="Include\Interface\IGameObject.h" />
+    <ClInclude Include="Include\Interface\IInPacket.h" />
+    <ClInclude Include="include\interface\IInterface.h" />
+    <ClInclude Include="Include\Interface\IModule.h" />
+    <ClInclude Include="Include\Interface\IModuleHost.h" />
+    <ClInclude Include="Include\Interface\IOutPacket.h" />
+    <ClInclude Include="Include\Interface\IPacket.h" />
+    <ClInclude Include="Include\Interface\ISocket.h" />
+    <ClInclude Include="include\Macros.h" />
+    <ClInclude Include="Include\ModuleDatablock.h" />
+    <ClInclude Include="Include\ModuleEventBus.h" />
+    <ClInclude Include="Include\ModuleFactory.h" />
+    <ClInclude Include="Include\ModuleSceneManager.h" />
+    <ClInclude Include="Include\Singleton.h" />
+    <ClInclude Include="Include\Socket.h" />
+    <ClInclude Include="include\TypeDefine.h" />
+    <ClInclude Include="Server\Server.h" />
+    <ClInclude Include="Utils\ConsoleColor.h" />
+    <ClInclude Include="Utils\log4z.h" />
+    <ClInclude Include="Utils\Logger.h" />
+    <ClInclude Include="Utils\Random.h" />
+    <ClInclude Include="Utils\tinystr.h" />
+    <ClInclude Include="Utils\tinyxml.h" />
+    <ClInclude Include="Utils\Tokenizer.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="Utils\XmlParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Compnent\ComEventBus.cpp" />
+    <ClCompile Include="Compnent\ComTest.cpp" />
+    <ClCompile Include="Datablock\DataBlockDefine.cpp" />
+    <ClCompile Include="Datablock\DataBlockHelper.cpp" />
+    <ClCompile Include="EventBus\EventBus.cpp" />
+    <ClCompile Include="EventBus\Event\EventDefine.cpp" />
+    <ClCompile Include="GameObject\User.cpp" />
+    <ClCompile Include="Modules\ModuleDatablock.cpp" />
+    <ClCompile Include="Modules\ModuleEventBus.cpp" />
+    <ClCompile Include="Modules\ModuleFactory.cpp" />
+    <ClCompile Include="Modules\ModuleSceneManager.cpp" />
+    <ClCompile Include="Net\Socket.cpp" />
+    <ClCompile Include="Server\Server.cpp" />
+    <ClCompile Include="Utils\ConsoleColor.cpp" />
+    <ClCompile Include="Utils\log4z.cpp" />
+    <ClCompile Include="Utils\Logger.cpp" />
+    <ClCompile Include="Utils\Random.cpp" />
+    <ClCompile Include="Utils\tinystr.cpp" />
+    <ClCompile Include="Utils\tinyxml.cpp" />
+    <ClCompile Include="Utils\tinyxmlerror.cpp" />
+    <ClCompile Include="Utils\tinyxmlparser.cpp" />
+    <ClCompile Include="Utils\Tokenizer.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Utils\XmlParser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
